@@ -1,5 +1,7 @@
 package com.pluralsight.conditionalstatements;
-import java.util.*;
+
+import java.util.Scanner;
+
 public class ConditionalStatements {
     public static void main(String[] args) {
         //Ask for age
@@ -8,10 +10,10 @@ public class ConditionalStatements {
         int age = scanner.nextInt();
 
         if (age >= 18) {
-            System.out.println("You're are 18 or older, Welcome!");
+            System.out.println("You are an adult.");
         }
         else {
-            System.out.println("You're not an adult yet");
+            System.out.println("You're not an adult yet.");
         }
         //Ask for grade:
         System.out.print("Enter your grade (A-F): ");
@@ -32,7 +34,7 @@ public class ConditionalStatements {
         }
         //Step 4:
         String word1 = "hello";
-        String word2 = new String("hello");
+        String word2 = new String("%s");
 
         System.out.println("Using '==': " + (word1 == word2));
         System.out.println("Using '.equals()': " + word1.equals(word2));
