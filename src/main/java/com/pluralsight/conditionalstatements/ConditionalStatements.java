@@ -36,7 +36,7 @@ public class ConditionalStatements {
         String word1 = "hello";
         String word2 = new String("%s");
 
-        System.out.println("Using '==': " + (word1 == word2));
+        System.out.println("Using '==': " + (word1 == (word2)));
         System.out.println("Using '.equals()': " + word1.equals(word2));
 
         //Step 5:
