@@ -3,22 +3,32 @@ package com.pluralsight.conditionalstatements;
 import java.util.Scanner;
 
 public class ConditionalStatements {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         //Ask for age
         Scanner scanner = new Scanner(System.in);
+        getAndDisplayAge();
+        getAndDisplayGrade();
+        comparingOfStrings();
+        complexConditions();
+    }
+
+    public static void getAndDisplayAge() {
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
 
         if (age >= 18) {
             System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are not an adult.");
         }
-        else {
-            System.out.println("You're not an adult yet.");
-        }
-        //Ask for grade:
+    }
+
+    public static void getAndDisplayGrade() {
         System.out.print("Enter your grade (A-F): ");
         String grade = scanner.next();
-
+        //Ask for grade:
         if (grade.equals("A")) {
             System.out.println("Excellent!");
         } else if (grade.equals("B")) {
@@ -32,13 +42,17 @@ public class ConditionalStatements {
         } else {
             System.out.println("Invalid grade entered: ");
         }
-        //Step 4:
-        String word1 = "hello";
-        String word2 = new String("%s");
+    }
+    public static void comparingOfStrings() {
 
-        System.out.println("Using '==': " + (word1 == (word2)));
-        System.out.println("Using '.equals()': " + word1.equals(word2));
+            //Step 4:
+            String word1 = "hello";
+            String word2 = new String("%s");
 
+            System.out.println("Using '==': " + (word1 == (word2)));
+            System.out.println("Using '.equals()': " + word1.equals(word2));
+    }
+    public static void complexConditions() {
         //Step 5:
         System.out.print("Enter username: ");
         String userName = scanner.next();

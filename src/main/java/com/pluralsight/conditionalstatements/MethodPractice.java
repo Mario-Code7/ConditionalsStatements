@@ -4,17 +4,19 @@ public class MethodPractice {
 
     public static void main(String[] args) {
         fish();
-        dance();
-        sayHi();
+        dance("Salsa");
+        sayHi("Mario");
     }
-    public static void sayHi() {
-        System.out.println("Hi");
+    public static void sayHi(String firstname) {
+        System.out.println("Hi " + firstname);
     }
-    public static void dance(){
+    public static void dance(String danceMove){
         System.out.println("Woohoo!");
         System.out.println("Woah, woah");
         System.out.println("Stop!");
         System.out.println("Hammer Time!");
+        System.out.printf("I am %s dancing", danceMove);
+        System.out.println();
     }
 
     public static void fish() {
